@@ -1,0 +1,5 @@
+df1 = data.select_dtypes([np.int, np.float])
+
+for i, col in enumerate(df1.columns):
+    plt.figure(i)
+    sns.boxplot(y=col, data=df1)
